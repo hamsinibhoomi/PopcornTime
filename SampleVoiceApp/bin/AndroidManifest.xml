@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.nuance.nmdp.sample"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/popcorntime" android:label="@string/app_name">
+        <activity android:name=".MainView"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MovieView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".PurchaseView"
+            	  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".TheatreView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".TtsView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".TimeView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".ShowDateView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".FinalView"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name=".TicketView"
+                  android:label="@string/app_name">
+        </activity>
+        <meta-data 	android:name="com.google.android.gms.version"
+        			android:value="@integer/google_play_services_version" />
+    </application>
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+
+<uses-sdk android:minSdkVersion="17"></uses-sdk>
+</manifest> 

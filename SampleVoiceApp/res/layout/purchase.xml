@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<EditText
+    android:id="@+id/text_PurchaseResult"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top|left"
+    android:visibility="gone"
+    android:minLines="2"  />
+
+
+
+<LinearLayout android:layout_height="wrap_content" 
+    android:layout_toRightOf="@+id/btn_startPurchase" 
+    android:id="@+id/layout_bottomButtons" 
+    android:layout_alignParentBottom="true" 
+    android:layout_width="fill_parent" 
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_startPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_startPurchase" />
+
+<Button
+    android:id="@+id/btn_startTts5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_weight="1"
+    android:text="@string/button_startTts"
+    android:visibility="gone" >
+</Button>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/layout_resultsList5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/layout_bottomButtons"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_results5"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="gone" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:minWidth="100dip"
+        android:layout_gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:minWidth="100dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewP6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:minWidth="100dip" 
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/textViewP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dip"
+        android:minWidth="100dip" 
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</RelativeLayout>

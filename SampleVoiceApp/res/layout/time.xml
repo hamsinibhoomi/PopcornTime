@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<EditText
+    android:id="@+id/text_TimeResult"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/text_titleShowTime"
+    android:gravity="top|left"
+    android:visibility="gone"
+    android:minLines="2"  />
+
+
+
+<LinearLayout android:layout_height="wrap_content" android:layout_toRightOf="@+id/btn_startTime" android:id="@+id/layout_bottomButtons" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_startShowTime" />
+<Button
+    android:id="@+id/btn_startTts3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_weight="1"
+    android:text="@string/button_startTts"
+    android:visibility="gone" >
+</Button>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/layout_resultsList3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <ListView
+        android:id="@+id/list_results3"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="gone" >
+    </ListView>
+    
+    <ListView
+        android:id="@+id/list_times"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+    </ListView>
+</LinearLayout>
+
+</RelativeLayout>
